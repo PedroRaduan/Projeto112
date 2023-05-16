@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestos com a mão</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body>
+    <center>
+        <div class="div">
+        <h1>Identificador de gestos</h1>
+            <p>Pode fazer esses sinais de mão aberta, tranquilo, soco, vitoria, joinha com a mão</p>
+            <div class="sim">
+               <div id="camera"></div>
+               <div>
+               <p id="previsao1" class="pv">Previsão 1</p>
+               <p id="emoji1"></p>
+               <p id="previsao2" class="pv">Previsão 2</p>
+               <p id="emoji2"></p>
+            </div>
+               <div id="resultado"></div> 
+            </div>
+            <br>
+            <br>
+            <div class="div_btn">
+            <button class="btn" onclick="tirar_foto()">Tirar foto</button>
+            <button class="btn" onclick="classificar()">Ver emoji</button>
+        </div>
+        </div>
+    </center>
+    <script src="app.js"></script>
+</body>
+</html>
